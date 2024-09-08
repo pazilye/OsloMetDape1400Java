@@ -1,5 +1,5 @@
 package Variabler2;
-import java.util.InputMismatchException;
+
 import java.util.Scanner;
 
 import static javax.swing.JOptionPane.*;
@@ -15,9 +15,9 @@ Lag et program som leser inn alderen din (et heltall). Vis så denne i en meldin
     ±
          */
 
-        String innAlder= showInputDialog("Skriv inn ditt alder");
-        int alder= Integer.parseInt(innAlder);
-        showMessageDialog(null,"min alder er " + alder + " år.");
+        String innAlder = showInputDialog("Skriv inn ditt alder");
+        int alder = Integer.parseInt(innAlder);
+        showMessageDialog(null, "min alder er " + alder + " år.");
 
 /*
 Oppgave 2
@@ -35,30 +35,29 @@ Lag et program som leser inn tre desimaltall. Programmet skal så summere disse 
         double number2;
         double number3;
 
-       try {
+        try {
 
-           System.out.println("Write a number");
-           Scanner scanner= new Scanner(System.in);
-           number1 = scanner.nextDouble();
+            System.out.println("Write a number");
+            Scanner scanner = new Scanner(System.in);
+            number1 = scanner.nextDouble();
 
-           System.out.println("Write another number");
-           number2 = scanner.nextDouble();
+            System.out.println("Write another number");
+            number2 = scanner.nextDouble();
 
-           System.out.println("Write another number");
-           number3 = scanner.nextDouble();
+            System.out.println("Write another number");
+            number3 = scanner.nextDouble();
 
-           System.out.println("sum of three numbers = " + number1 + number2 + number3);
-           System.out.println("averageOfThreeNumbers = " + number1 + number2 + number3 / 3);
+            System.out.println("sum of three numbers = " + number1 + number2 + number3);
+            System.out.println("averageOfThreeNumbers = " + number1 + number2 + number3 / 3);
 
-       }
-       catch (Exception e){
-           number1=0;
-           System.out.println(e);
-       }
+        } catch (Exception e) {
+            number1 = 0;
+            System.out.println(e);
+        }
 
         System.out.println("Numbers are  = " + number1);
 
-       }
-       }
+    }
+}
 
 
