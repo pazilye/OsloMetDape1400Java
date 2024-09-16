@@ -1,4 +1,5 @@
 package ClassesAndObjects2.PersonTask;
+import static javax.swing.JOptionPane.*;
 
 
 public class Person {
@@ -45,9 +46,9 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public String printInfo(){
+    public void printInfo(){
         String out = getFirstName() +"\n"+getLastName() +"\n"+getAddress() +"\n"+getPhoneNumber() +"\n";
-        return out;
+        showMessageDialog(null,out);
     }
 
 

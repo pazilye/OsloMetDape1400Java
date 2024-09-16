@@ -9,7 +9,8 @@ public class Bank {
         //konto.bankOverview();
 
         konto.insertMoney(300);
-        konto.withdrawMoney(100);
+        konto.withdrawMoney(1000);
+
 
     }
 

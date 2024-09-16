@@ -17,14 +17,16 @@ public class Konto {
     }
 
     public double insertMoney(double insertedMoney){
+        saldo+=insertedMoney;
         System.out.println(insertedMoney + " kroner has been inserted");
-        return insertedMoney;
+        return saldo;
     }
 
     public double withdrawMoney(double withdrawenMoney){
-        this.saldo -= withdrawenMoney;
-        if (this.saldo > 0){
-            System.out.println("Here is your new bank balance " +this.saldo);
+
+        if (withdrawenMoney <=saldo){
+            saldo -= withdrawenMoney;
+            System.out.println("Here is your new bank balance " +saldo);
         }else {
             System.out.println("Sorry, you don't have enough money");
         }

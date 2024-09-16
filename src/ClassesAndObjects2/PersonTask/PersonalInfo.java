@@ -6,7 +6,7 @@ public class PersonalInfo {
 
         Person person=new Person("Paziliya","Jurat","Oslo Veien",96496059);
 
-        showMessageDialog(null,person.printInfo());
+        person.printInfo();
 
     }
 }
